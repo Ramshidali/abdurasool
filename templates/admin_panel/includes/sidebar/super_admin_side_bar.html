@@ -1,0 +1,78 @@
+
+{% load static %}
+<div class="left-sidenav">
+    <!-- LOGO -->
+    <div class="brand">
+        <a href="{% url 'app' %}" class="logo">
+            <span>
+                <img src="{% static 'admin_panel/assets/images/logo/AR_logo.jpeg' %}" alt="logo-small" class="logo-sm" style="height: 50px;">
+            </span>
+            {% comment %} <span>
+                <img src="{% static 'admin_panel/assets/images/Abdulrasool-logo/Abdulrasool Logo 2.svg' %}" alt="logo-large" class="logo-lg logo-light">
+                <img src="{% static 'admin_panel/assets/images/Abdulrasool-logo/Abdulrasool Logo 2.svg' %}" alt="logo-large" class="logo-lg logo-dark">
+            </span> {% endcomment %}
+        </a>
+    </div>
+    <!--end logo-->
+    <div class="menu-content h-100" data-simplebar>
+        <ul class="metismenu left-sidenav-menu">
+            <li class="menu-label mt-0">Main</li>
+            <li>
+                <a href="{% url 'app' %}"> <i data-feather="home" class="align-self-center menu-icon"></i><span>Dashboard</span><span class="menu-arrow"><i class="mdi mdi-chevron-down"></i></span></a>
+            </li>
+            
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'product:category' %}"><i class="ti-control-record"></i>Categories</a>
+                <a class="nav-link" href="{% url 'product:create_category' %}"><i class="ti-plus"></i></a>
+            </li>
+
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'product:product' %}"><i class="ti-control-record"></i>Products</a>
+                <a class="nav-link" href="{% url 'product:create_product' %}"><i class="ti-plus"></i></a>
+            </li>
+
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'web:service' %}"><i class="ti-control-record"></i>Services</a>
+                <a class="nav-link" href="{% url 'web:create_service' %}"><i class="ti-plus"></i></a>
+            </li>
+
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'web:career' %}"><i class="ti-control-record"></i>Careers</a>
+                <a class="nav-link" href="{% url 'web:create_career' %}"><i class="ti-plus"></i></a>
+            </li>
+
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'web:team_member' %}"><i class="ti-control-record"></i>Team Member</a>
+                <a class="nav-link" href="{% url 'web:create_team_member' %}"><i class="ti-plus"></i></a>
+            </li>
+
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'web:testimonial' %}"><i class="ti-control-record"></i>Testimonial</a>
+                <a class="nav-link" href="{% url 'web:create_testimonial' %}"><i class="ti-plus"></i></a>
+            </li>
+
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'web:address' %}"><i class="ti-control-record"></i>Address</a>
+                <a class="nav-link" href="{% url 'web:create_address' %}"><i class="ti-plus"></i></a>
+            </li>
+
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'web:connect' %}"><i class="ti-control-record"></i>Connect</a>
+                <a class="nav-link" href="{% url 'web:create_connect' %}"><i class="ti-plus"></i></a>
+            </li>
+            
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'web:description' %}"><i class="ti-control-record"></i>Descriptions</a>
+                {% if is_description <= 0 %}
+                <a class="nav-link" href="{% url 'web:create_description' %}"><i class="ti-plus"></i></a>
+                {% endif %}
+            </li>
+            
+            <li class="nav-item d-flex justify-content-between">
+                <a class="nav-link" href="{% url 'web:about_us' %}"><i class="ti-control-record"></i>About Us</a>
+                <a class="nav-link" href="{% url 'web:create_about_us' %}"><i class="ti-plus"></i></a>
+            </li>
+
+        </ul>
+    </div>
+</div>

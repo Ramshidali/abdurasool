@@ -1,0 +1,251 @@
+{% extends 'web/web_base.html' %}
+{% load static %}
+{% load web_templates_tags %}
+{% block content %}
+
+
+<section id="provide">
+    <div class="wrapper">
+      <div class="head" id="category">
+        <h4>We Provides</h4>
+        <p>
+            If you choose us to provide your quality workplace furniture, we offer a variety of customizable service levels ranging from drop-shipping to your location
+        </p>
+      </div>
+      <!-- <ul class="category" id="tab-select"> -->
+      <ul class="services-slider" id="tab-select">
+        {% for category in categories %}
+        <li id="li{{category.pk}}" class="{% if forloop.first %}first-category-li{% endif %}" data-url="{% url 'web:product_category' %}" onclick="product_ajax('{{category.pk}}')">
+          <a style="color: #000;" href="javascript:void(0);">
+            <span><img src="{{category.image.url}}" alt="Chair" /></span>
+            <small>{{category.title}}</small>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <!-- category-section -->
+    </div>
+  </section>
+  <!-- provide-end -->
+
+  <section id="designs">
+    <div class="wrapper">
+      <!-- loop-items-for-categories -->
+      <div class="box tab-box" id="tab01">
+            <ul class="slider-item">
+
+                <li>
+                    <a href="#"
+                    ><span
+                        ><img src="" alt="Chair"
+                    /></span>
+                    <div class="info">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="text-box">
+                <h3 id="cat_description_title"></h3>
+                <p id="cat_description_description">
+
+                </p>
+                <!-- <a href="" class="button">Read More</a> -->
+            </div>
+      </div>
+    </div>
+  </section>
+  <!-- designsy -->
+{%  if instances %}
+<section id="services">
+    <div class="wrapper">
+        <div class="head">
+        <h3>Our Services & Interiar Desings</h3>
+        <p>
+            {{descriptions.our_services}}
+        </p>
+        </div>
+        <div class="container">
+        <ul class="page-item">
+            {% for service in instances %}
+            <li class="pagination-item">
+                <a href="#">
+                    <div class="img-box">
+                    <img
+                        src="{{service.image.url}}"
+                        alt="Office"
+                        class="small-image"
+                    />
+                    <span>{{service.title}}</span>
+                    </div>
+                    <div class="info">
+                    <h4>{{service.title}}</h4>
+                    <p>
+                        {{service.description}}
+                    </p>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+
+        </ul>
+        <div id="pagination-container"></div>
+        </div>
+    </div>
+</section>
+{% endif %}
+<!-- services-end -->
+
+  <!-- careers -->
+<section id="careers">
+    <div class="wrapper">
+        <div class="head">
+        <h2>Careers</h2>
+        <p>
+            {{descriptions.careers}}
+        </p>
+        </div>
+        <div class="container">
+        <ul>
+            {% for career in careers %}
+            <li>
+                <h5>{{career.title}}</h5>
+                <p>
+                    {{career.description}}
+                </p>
+                <span>Mail us : {{career.email}}</span>
+            </li>
+            {% endfor %}
+        </ul>
+        </div>
+    </div>
+</section>
+
+  <!-- members-section -->
+<section id="members">
+    <div class="wrapper">
+        <div class="head">
+        <h2>Our Team Members</h2>
+        <p>
+            {{descriptions.team_members}}
+        </p>
+        </div>
+        <div class="container">
+        <ul>
+            {% for team in teams %}
+            <li>
+                <div class="avatar">
+                    <img src="{% static 'web/images/users.png' %}" alt="User" />
+                </div>
+                <h4>{{team.name}}</h4>
+                <small>{{team.designation}}</small>
+                <div class="social">
+                    <span
+                    ><a target="_blank" href="{{team.instagram_link}}"
+                        ><img src="{% static 'web/images/instagram.svg' %}" alt="Instagram" /></a
+                    ></span>
+                    <span
+                    ><a target="_blank" href="{{team.facebook_link}}"><img src="{% static 'web/images/fb.svg' %}" alt="Facebook" /></a
+                    ></span>
+                    <span
+                    ><a target="_blank" href="{{team.twitter_link}}"
+                        ><img src="{% static 'web/images/twitter.svg' %}" alt="Twitter" /></a
+                    ></span>
+                    <span>
+                        <a target="_blank" href="{{team.whatsapp_link}}">
+                            <img class="wtsp" src="{% static 'web/images/whatsapp.svg' %}" alt="Whatsapp" />
+                        </a>
+                    </span>
+                </div>
+            </li>
+            {% endfor %}
+
+        </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- about-us -->
+<section id="about">
+    <div class="wrapper">
+        <div class="head">
+        <h2>Know About Us</h2>
+        <p>
+            {{descriptions.about_us}}
+        </p>
+        </div>
+        <div class="container">
+            {% for about in about_us %}
+            {% if forloop.counter|divisibleby:2 %}
+            <div class="items">
+                <div class="text-box left">
+                    <h4>{{about.title}}</h4>
+                    <p>{{about.description}}</p>
+                </div>
+                <div class="image-box">
+                    <div class="border-box"></div>
+                    <div class="img-container">
+                        <img src="{{about.image.url}}" alt="About" />
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="items">
+                <div class="image-box">
+                    <div class="border-box"></div>
+                    <div class="img-container">
+                        <img src="{{about.image.url}}" alt="About" />
+                    </div>
+                </div>
+                <div class="text-box right">
+                    <h4>{{about.title}}</h4>
+                    <p>{{about.description}}</p>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+  <!-- testimonials -->
+<section id="testimonials">
+    <div class="wrapper">
+        <div class="head">
+        <h2>Testimonials</h2>
+        </div>
+        <div class="container">
+        <ul class="testimonial-slider">
+            {% for t in testimonial %}
+            <li>
+                <div class="avatar">
+                    <h2><img src="{{t.image.url}}" alt="User" /></h2>
+                    <div class="name-box">
+                    <h3>{{t.name}}</h3>
+                    <!-- star-png -->
+                    <!-- <span><img src="" alt=""></span> -->
+                    </div>
+                </div>
+                <p>
+                    {{t.description}}
+                </p>
+            </li>
+            {% endfor %}
+        </ul>
+        </div>
+    </div>
+</section>
+  <!-- tedstimonial-end -->
+
+  <!-- pre-loader -->
+  <section id="loader">
+    <div class="content">
+      <div class="right"><span></span></div>
+    </div>
+  </section>
+
+
+{% endblock%}

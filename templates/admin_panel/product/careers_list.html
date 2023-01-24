@@ -1,0 +1,92 @@
+{% extends 'admin_panel/base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Page Content-->
+    <div class="page-content">
+
+        <div class="container-fluid">
+            <!-- Page-Title -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="page-title-box">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="page-title">{{page_title}}</h4>
+   
+                            </div><!--end col-->
+                            <div class="col-auto align-self-center">
+                                <a class="btn btn-outline-primary btn-icon-text"  href="{% url 'web:create_career' %}" > Create <i class="ti-plus btn-icon-append"></i></a>
+                            </div><!--end col--> 
+                        </div><!--end row-->                                                              
+                    </div><!-- end page-title-box -->
+                </div><!--end col-->
+            </div><!--end row-->
+            <!-- end page title end breadcrumb -->
+            {% if instances %}
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4 class="card-title">List view</h4>
+                        </div>
+                        <!--end card-header-->
+                        <div class="card-body">
+                            
+                            <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        
+                                        <tr>
+                                            <th>SL.No</th>
+                                            <th>Title</th>
+                                            <th>Email</th>
+                                            <th class="text-right">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for instance in instances %}
+                                        <tr>
+                                            <td>{{forloop.counter}}</td>
+                                            <td>{{instance.title}}</td> 
+                                            <td>{{instance.email}}</td> 
+                                                
+                                            <td class="text-right">
+                                                <a href="{% url 'web:career_single' pk=instance.pk %}"><i class="las la-eye text-info font-18"></i></a>
+                                                <a href="{% url 'web:edit_career' pk=instance.pk %}"><i class="las la-pen text-info font-18"></i></a>
+                                                <a class="action-button remove btn btn-default btn-icon" style="padding:0;"
+                                                 data-id="{{instance.pk}}" data-text="{{confirm_delete_message}}" data-title="Are you sure?" href="{% url 'web:delete_career' pk=instance.pk %}"><i class="las la-trash-alt text-danger font-18"></i></a>
+                                            </td>
+                                        </tr>
+                                        {% endfor %}
+                               
+                                    </tbody>
+                                </table>
+                                <!--end /table-->
+                            </div>
+                            <!--end /tableresponsive-->
+                            <!-- pagination -->
+                            
+                        </div>
+                        <!--end card-body-->
+                    </div>
+                    <!--end card-->
+                </div> <!-- end col -->
+            </div>
+            {% else %}
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">  
+                        <div class="text-center">
+                            <img class="mb-3 rounded-circle" width="500px;" src="{% static 'admin_panel/assets/images/nothing_found.jpg' %}" alt="" /> 
+                            <br />                                     
+                            <a  href="{% url 'web:create_career' %}" class="btn btn-outline-primary btn-icon-text">Create {{page_title}}</a>
+                        </div>
+                    </div><!--end card-body-->
+                </div><!--end card-->
+            </div><!--end col-->  
+            {% endif %}
+        </div><!-- container -->
+    <!-- end page content -->
+{% endblock content %}
+        

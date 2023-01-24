@@ -1,0 +1,811 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$tQg6oLdBLF1CT9oJHyKTMf$XHBbBv/dRb7H2eYEurEZk3j8uo2JIpIL7GO3NIW3zpU=",
+        "last_login": "2022-07-02T16:05:38.716Z",
+        "is_superuser": true,
+        "username": "ab-admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2022-06-13T06:55:27Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "product.category",
+    "pk": "18f42aaa-16af-40e4-a0f0-7d19aacc2dca",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-01T04:54:13.547Z",
+        "date_updated": "2022-07-01T04:54:13.547Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Curtain",
+        "description_title": "Curtain description",
+        "description": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum\r\n            congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis\r\n            lobortis iaculis ullamcorper aliquet. Tri Pulvinar in bibendum duis\r\n            eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor\r\n            ut pharetra in pellentesque lectus. Quis lobortis",
+        "image": "product/category/curtain.png"
+    }
+},
+{
+    "model": "product.category",
+    "pk": "2a92044c-a5a7-44b6-9d74-94dfbc395dd0",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-01T04:52:26.109Z",
+        "date_updated": "2022-07-01T04:52:26.109Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Chair's",
+        "description_title": "We Provide You The Best Experiance",
+        "description": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum\r\ncongue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis\r\nlobortis iaculis ullamcorper aliquet. Tri Pulvinar in bibendum duis\r\neget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor\r\nut pharetra in pellentesque lectus. Quis lobortis iaculis\r\nullamcorper aliquet. Tri",
+        "image": "product/category/office-chair.png"
+    }
+},
+{
+    "model": "product.category",
+    "pk": "3a4b9871-ba14-4518-914c-4e3ebd9ef028",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-13T07:53:43.872Z",
+        "date_updated": "2022-06-13T10:26:27.942Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "title": "hhus",
+        "description_title": "njsnj",
+        "description": "jnjsnupdate",
+        "image": "product/category/Ellipse_17_F3V8FxA.png"
+    }
+},
+{
+    "model": "product.category",
+    "pk": "3f1c053d-38bc-418f-a629-b34e6ff4458a",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-01T04:55:35.909Z",
+        "date_updated": "2022-07-01T04:55:35.909Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Lounge",
+        "description_title": "Lounge description",
+        "description": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri",
+        "image": "product/category/chair.png"
+    }
+},
+{
+    "model": "product.category",
+    "pk": "64b834d3-b7a6-42d5-b565-0abadd7c12f9",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-01T04:56:22.052Z",
+        "date_updated": "2022-07-01T04:56:22.052Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Living",
+        "description_title": "Living description",
+        "description": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri",
+        "image": "product/category/table.png"
+    }
+},
+{
+    "model": "product.category",
+    "pk": "8de5a6b8-ac98-412e-8421-9852e6243a29",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-01T04:57:23.372Z",
+        "date_updated": "2022-07-01T04:57:23.372Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Bedroom",
+        "description_title": "Bedroom description",
+        "description": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri",
+        "image": "product/category/bed.png"
+    }
+},
+{
+    "model": "product.category",
+    "pk": "dc789765-a3e4-4da2-a8c6-9da09114a670",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-13T07:51:35.901Z",
+        "date_updated": "2022-06-13T07:51:35.901Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "title": "hhh",
+        "description_title": "hhhh",
+        "description": "hhhh",
+        "image": "product/category/Ellipse_17.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "004c5405-4f53-477e-b997-8d9e29c2b5f7",
+    "fields": {
+        "auto_id": 10,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:44:46.158Z",
+        "date_updated": "2022-07-02T15:44:46.158Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "8de5a6b8-ac98-412e-8421-9852e6243a29",
+        "name": "bathroom",
+        "color": "test color",
+        "image": "product/product/office-inside.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "12a4fa48-84cb-4581-a3f6-404b68ad9a80",
+    "fields": {
+        "auto_id": 8,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:43:51.697Z",
+        "date_updated": "2022-07-02T15:43:51.697Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "3f1c053d-38bc-418f-a629-b34e6ff4458a",
+        "name": "lounge 1",
+        "color": "test color",
+        "image": "product/product/bedroom.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "3ef3596a-5767-4583-8bcc-a6132cdddacc",
+    "fields": {
+        "auto_id": 9,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:44:25.672Z",
+        "date_updated": "2022-07-02T15:44:25.672Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "64b834d3-b7a6-42d5-b565-0abadd7c12f9",
+        "name": "living 1",
+        "color": "test color",
+        "image": "product/product/office-inside-2.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "638b6e96-9a54-4a76-a563-326d9346ec38",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:02:40.985Z",
+        "date_updated": "2022-07-02T15:02:40.985Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "2a92044c-a5a7-44b6-9d74-94dfbc395dd0",
+        "name": "chair 1",
+        "color": "red",
+        "image": "product/product/office-black.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "73a8d433-88b1-4ae0-bd25-934083c284cf",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:09:45.642Z",
+        "date_updated": "2022-07-02T15:09:45.642Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "2a92044c-a5a7-44b6-9d74-94dfbc395dd0",
+        "name": "chair 4",
+        "color": "red",
+        "image": "product/product/chair-services.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "8dd91079-76cb-4448-b0e4-ae10c88ae976",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:07:27.417Z",
+        "date_updated": "2022-07-02T15:07:27.417Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "2a92044c-a5a7-44b6-9d74-94dfbc395dd0",
+        "name": "char 2",
+        "color": "test color",
+        "image": "product/product/laxuary.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "9976a319-3236-403d-8753-0b8287dc68fb",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:10:32.169Z",
+        "date_updated": "2022-07-02T15:10:32.169Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "2a92044c-a5a7-44b6-9d74-94dfbc395dd0",
+        "name": "chair 5",
+        "color": "blue",
+        "image": "product/product/chair.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "b23551c6-4195-4911-994a-fda7cd3d5da1",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:42:47.675Z",
+        "date_updated": "2022-07-02T15:42:47.675Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "18f42aaa-16af-40e4-a0f0-7d19aacc2dca",
+        "name": "curtain 1",
+        "color": "red",
+        "image": "product/product/curtain.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "bf555ed7-73bb-4af1-a1c6-a93f0775e314",
+    "fields": {
+        "auto_id": 11,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:49:14.157Z",
+        "date_updated": "2022-07-02T15:49:14.157Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "8de5a6b8-ac98-412e-8421-9852e6243a29",
+        "name": "bedrooom",
+        "color": "red",
+        "image": "product/product/bedroom_J8KUeEr.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "c8b21ef7-f4c6-409e-b820-7634dfeb039c",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-14T06:05:28.612Z",
+        "date_updated": "2022-06-14T06:05:39.476Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "category": "dc789765-a3e4-4da2-a8c6-9da09114a670",
+        "name": "tr",
+        "color": "rrrrrrrr",
+        "image": "product/product/Rectangle_174.png"
+    }
+},
+{
+    "model": "product.product",
+    "pk": "fbf465b5-7a24-4ef4-853c-1a7a86d55a21",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-07-02T15:07:59.797Z",
+        "date_updated": "2022-07-02T15:07:59.797Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "category": "2a92044c-a5a7-44b6-9d74-94dfbc395dd0",
+        "name": "chair 3",
+        "color": "test color",
+        "image": "product/product/chair-slide.png"
+    }
+},
+{
+    "model": "web.service",
+    "pk": "1c745112-cea9-4ec1-828b-7ec2aab57047",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:06:28.693Z",
+        "date_updated": "2022-06-30T08:06:28.693Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Interior service’s",
+        "description": "Augue donec ipsum diam amet. Tincidunt sodales tincidunt ut tristique tempus euismod sagittis leo. Nec aliquam, faucibus amet, scelerisque.",
+        "image": "web/service/interior.png"
+    }
+},
+{
+    "model": "web.service",
+    "pk": "2de643a2-32cf-4cc1-b62c-57c65267e13b",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-14T08:38:56.776Z",
+        "date_updated": "2022-06-30T08:05:19.863Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Office Inside service’s",
+        "description": "Urna magna adipiscing purus sapien sit. Et malesuada porttitor varius amet",
+        "image": "web/service/office-inside-2.png"
+    }
+},
+{
+    "model": "web.service",
+    "pk": "467bdf0a-3862-4649-826b-0f866cd09696",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:01:02.025Z",
+        "date_updated": "2022-06-30T08:04:10.746Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Bedroom Interior Desing service’s",
+        "description": "Tincidunt id leo justo, proin in urna. Arcu viverra enim vel enim duis. Ultricies eleifend nunc eu nulla in nunc accumsan condimentum pellentesque. Aliquam elementum gravida id sit leo, nulla. Id diam consectetur platea id nunc est, urna ut.",
+        "image": "web/service/bedroom.png"
+    }
+},
+{
+    "model": "web.service",
+    "pk": "485a750e-8c99-4d5f-950d-f8730f44f3c3",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-14T08:39:34.991Z",
+        "date_updated": "2022-06-14T08:39:34.991Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "title": "h",
+        "description": "j",
+        "image": "web/service/Rectangle_174-5_vr1xdBh.png"
+    }
+},
+{
+    "model": "web.service",
+    "pk": "b30d54cd-d11f-4ba4-88e0-40a9f6d002c7",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T07:58:58.070Z",
+        "date_updated": "2022-06-30T08:03:28.014Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Office Inside service’s",
+        "description": "Sit aliquam eget quam consectetur. Vestibulum tortor augue at arcu adipiscing volutpat eget nunc nunc. Arcu in scelerisque volutpat nisl. Lacus eget arcu.",
+        "image": "web/service/office-inside.png"
+    }
+},
+{
+    "model": "web.career",
+    "pk": "65df69e1-69e2-4173-b60f-1a8f630af42c",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-14T09:50:51.172Z",
+        "date_updated": "2022-06-14T09:50:51.172Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "title": "dd",
+        "description": "ddd",
+        "email": "ddd@g.com"
+    }
+},
+{
+    "model": "web.career",
+    "pk": "68bad4d6-08d0-49f4-af0e-7fad22ca6421",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:12:45.560Z",
+        "date_updated": "2022-06-30T08:12:45.560Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Furniture Carpenter",
+        "description": "Augue donec ipsum diam amet. Tincidunt sodales tincidunt ut tristique tempus euismod sagittis leo. Nec aliquam, faucibus Augue donec ipsum Nec aliquam, faucibus",
+        "email": "designer123@gmail.com"
+    }
+},
+{
+    "model": "web.career",
+    "pk": "a320741a-78c9-41f4-bc9c-3101df6026de",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:11:33.913Z",
+        "date_updated": "2022-06-30T08:11:33.913Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Furniture Designer",
+        "description": "Augue donec ipsum diam amet. Tincidunt sodales tincidunt ut tristique tempus euismod sagittis leo. Nec aliquam, faucibus Augue donec ipsum diam amet. Tincidcibus",
+        "email": "designer123@gmail.com"
+    }
+},
+{
+    "model": "web.career",
+    "pk": "a6d4ffad-4542-44c3-bdb3-af322c3b3734",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:12:14.086Z",
+        "date_updated": "2022-06-30T08:12:14.086Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Furniture Expert",
+        "description": "Augue donec ipsum diam amet. Tincidunt sodales tincidunt ut tristique tempus euismod sagittis leo. Nec aliquam, faucibus Augu. Nec aliquam, faucibus",
+        "email": "designer123@gmail.com"
+    }
+},
+{
+    "model": "web.career",
+    "pk": "ba7f81ad-ed00-40c1-94f7-a8f43bcbc620",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:10:48.418Z",
+        "date_updated": "2022-06-30T08:10:48.419Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Interior Designer",
+        "description": "Augue donec ipsum diam amet. Tincidunt sodales tincidunt ut tristique tempus euismod sagittis leo. Nec aliquam, faucibus",
+        "email": "designer123@gmail.com"
+    }
+},
+{
+    "model": "web.career",
+    "pk": "d6077466-1bd4-4e5d-8efa-404e49dc22f7",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:14:01.069Z",
+        "date_updated": "2022-06-30T08:14:01.069Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Testing Furniture Export",
+        "description": "Augue donec ipsum diam amet. Tincidunt sodales tincidunt ut tristique tempus euismod sagittis leo. Nec aliquam, faucibus Augue donec ipsum diam amet. Tincidunt s",
+        "email": "designer123@gmail.com"
+    }
+},
+{
+    "model": "web.career",
+    "pk": "fd86b037-f63a-4455-b756-b43fcec9585f",
+    "fields": {
+        "auto_id": 7,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:14:26.410Z",
+        "date_updated": "2022-06-30T08:14:26.410Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Helper & Packaging",
+        "description": "Augue donec ipsum diam amet. Tincidunt sodales tincidunt ut tristique tempus euismod sagittis leo. Nec aliquam, faucibus Augue donec ipsum.",
+        "email": "designer123@gmail.com"
+    }
+},
+{
+    "model": "web.teammember",
+    "pk": "639b645e-5b2d-43e9-a28a-44d16bba2776",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:36:22.023Z",
+        "date_updated": "2022-06-30T08:36:22.023Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "name": "Antonia Simran",
+        "designation": "Cheif Head Of Zilron",
+        "instagram_link": "http://test.com",
+        "facebook_link": "http://test.com",
+        "twitter_link": "http://test.com"
+    }
+},
+{
+    "model": "web.teammember",
+    "pk": "8a727458-4d95-4b54-a13b-b028865e05ff",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T08:36:53.224Z",
+        "date_updated": "2022-06-30T08:36:53.224Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "name": "Antonia Simran",
+        "designation": "Cheif Head Of Zilron",
+        "instagram_link": "http://test.com",
+        "facebook_link": "http://test.com",
+        "twitter_link": "http://test.com"
+    }
+},
+{
+    "model": "web.teammember",
+    "pk": "a5270c58-a33d-4637-b66f-06b94fbba702",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-14T11:50:45.042Z",
+        "date_updated": "2022-06-14T12:00:19.173Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "name": "ddd",
+        "designation": "dr",
+        "instagram_link": "http://d@b.com",
+        "facebook_link": "http://d@b.com",
+        "twitter_link": "http://d@b.com"
+    }
+},
+{
+    "model": "web.aboutus",
+    "pk": "6c8c2ce4-964e-4a25-a972-41f226b600d3",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-14T12:52:02.316Z",
+        "date_updated": "2022-06-14T12:52:02.316Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "title": "test",
+        "description": "test",
+        "image": "web/aboutus/Rectangle_174-3.png"
+    }
+},
+{
+    "model": "web.aboutus",
+    "pk": "b7e8d068-1393-476c-aa14-ddad0192c11b",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T09:21:32.751Z",
+        "date_updated": "2022-06-30T09:21:32.751Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Why Choose Us?",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit volupt atem accsantium doloremqaudantium, totam rem aperiam, eaque ipsa quae ab illo inventre veritatis et qu asi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiavolupts sit aspernatur aut odit aut fugit, sed q uia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam.",
+        "image": "web/aboutus/about1.png"
+    }
+},
+{
+    "model": "web.aboutus",
+    "pk": "e9cbb56a-b509-4253-b4bc-f134b8bdb4fc",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T09:20:44.799Z",
+        "date_updated": "2022-06-30T09:20:44.800Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "title": "Our Designig Methodology",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit volupt atem accsantium doloremqaudantium, totam rem aperiam, eaque ipsa quae ab illo inventre veritatis et qu asi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quiavolupts sit aspernatur aut odit aut fugit, sed q uia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam.",
+        "image": "web/aboutus/about2.png"
+    }
+},
+{
+    "model": "web.testimonial",
+    "pk": "3c222c1c-ede6-40e5-ae22-d7ea7902c181",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T09:34:33.513Z",
+        "date_updated": "2022-06-30T09:34:33.513Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "name": "Willie Makit",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit volupt atem\r\naccsantium doloremqaudantium, totam rem aperiam, eaque ipsa quae\r\nab ised q uia consequuntur magni dolores eos qui ratione\r\nvoluptatem sequi nesciunt.",
+        "image": "web/testimonial/rev1.png",
+        "rating": 5
+    }
+},
+{
+    "model": "web.testimonial",
+    "pk": "ab930f0d-644b-41b3-87a4-4ed5eccb2cf3",
+    "fields": {
+        "auto_id": 5,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T09:36:41.988Z",
+        "date_updated": "2022-06-30T09:36:41.988Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "name": "Theresa Ryta",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit volupt atem\r\naccsantium doloremqaudantium, totam rem aperiam, eaque ipsa quae\r\nab ised q uia consequuntur magni dolores eos qui ratione\r\nvoluptatem sequi nesciunt.",
+        "image": "web/testimonial/rev3.png",
+        "rating": 3
+    }
+},
+{
+    "model": "web.testimonial",
+    "pk": "c02a7682-86bb-4be4-bd17-52ac313b76cb",
+    "fields": {
+        "auto_id": 6,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T09:37:20.651Z",
+        "date_updated": "2022-06-30T09:37:20.651Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "name": "Willie Makit",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit volupt atem\r\naccsantium doloremqaudantium, totam rem aperiam, eaque ipsa quae\r\nab ised q uia consequuntur magni dolores eos qui ratione\r\nvoluptatem sequi nesciunt.",
+        "image": "web/testimonial/rev1_snX51ZL.png",
+        "rating": 5
+    }
+},
+{
+    "model": "web.testimonial",
+    "pk": "da743432-2a6f-42f9-8b6e-b8a0c0d709f8",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-15T06:03:28.822Z",
+        "date_updated": "2022-06-15T06:06:29.890Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "name": "tet",
+        "description": "tgyswwwwwwwwwwwwwwwwwwwwwwbxnsiailji jsnjjj",
+        "image": "web/testimonial/Rectangle_174-5.png",
+        "rating": 4
+    }
+},
+{
+    "model": "web.testimonial",
+    "pk": "e90dd668-9b20-4df8-a898-278812dbc97a",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T09:34:35.233Z",
+        "date_updated": "2022-06-30T09:34:35.233Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "name": "Willie Makit",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit volupt atem\r\naccsantium doloremqaudantium, totam rem aperiam, eaque ipsa quae\r\nab ised q uia consequuntur magni dolores eos qui ratione\r\nvoluptatem sequi nesciunt.",
+        "image": "web/testimonial/rev1_zNqsepb.png",
+        "rating": 5
+    }
+},
+{
+    "model": "web.testimonial",
+    "pk": "ffd8ca98-3086-41d9-8462-b9d115bf3621",
+    "fields": {
+        "auto_id": 4,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T09:35:39.174Z",
+        "date_updated": "2022-06-30T09:35:39.174Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "name": "Dee Zynah",
+        "description": "Sed ut perspiciatis unde omnis iste natus error sit volupt atem\r\naccsantium doloremqaudantium, totam rem aperiam, eaque ipsa quae\r\nab ised q uia consequuntur magni dolores eos qui ratione\r\nvoluptatem sequi nesciunt.",
+        "image": "web/testimonial/rev2.png",
+        "rating": 4
+    }
+},
+{
+    "model": "web.address",
+    "pk": "19b8c397-b4ad-456d-bafc-3621fa7c708c",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-15T06:54:43.245Z",
+        "date_updated": "2022-06-15T07:03:53.615Z",
+        "is_deleted": true,
+        "deleted_reason": null,
+        "phone": "9544433545",
+        "email": "aliramshid@gmil.com",
+        "location": "bhaah update",
+        "location_url": "http://test.com",
+        "office_type": "sub_office"
+    }
+},
+{
+    "model": "web.address",
+    "pk": "74a1ce83-06c8-4d69-8ba8-a4ad47b8a7fb",
+    "fields": {
+        "auto_id": 2,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T09:40:19.515Z",
+        "date_updated": "2022-06-30T09:40:19.515Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "phone": "+65 321478",
+        "email": "abdulrasoolfurniture@gmail.com",
+        "location": "102 Manor South Junction, Davanport City, Grjeniya",
+        "location_url": "http://goolge.com",
+        "office_type": "main_office"
+    }
+},
+{
+    "model": "web.address",
+    "pk": "8e5019bb-b204-4852-ae93-44c4710fef16",
+    "fields": {
+        "auto_id": 3,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-30T09:41:13.541Z",
+        "date_updated": "2022-06-30T09:41:13.541Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "phone": "+653214789",
+        "email": "abdulrasoolfurniture@gmail.com",
+        "location": "102 Manor South Junction, Davanport City, Grjeniya",
+        "location_url": "http://google.com",
+        "office_type": "sub_office"
+    }
+},
+{
+    "model": "web.connect",
+    "pk": "8ae2dcee-e64a-46df-b056-afb4b4233653",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-15T08:35:34.439Z",
+        "date_updated": "2022-06-15T08:35:51.267Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "instagram_link": "http://d@b.comd",
+        "facebook_link": "http://d@b.comd",
+        "twitter_link": "http://d@b.comd",
+        "linkedin_link": "http://hsy.comd"
+    }
+},
+{
+    "model": "web.description",
+    "pk": "f2a84903-7e1e-419c-875d-8383bcdeb01c",
+    "fields": {
+        "auto_id": 1,
+        "creator": 1,
+        "updater": 1,
+        "date_added": "2022-06-15T09:03:08.588Z",
+        "date_updated": "2022-06-30T09:56:06.662Z",
+        "is_deleted": false,
+        "deleted_reason": null,
+        "we_provides": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri",
+        "our_services": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri",
+        "careers": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri",
+        "team_members": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri",
+        "about_us": "Pulvinar in bibendum duis eget nascetur in. Augue cras sit dictum congue. Habitasse ut tortor ut pharetra in pellentesque lectus. Quis lobortis iaculis ullamcorper aliquet. Tri"
+    }
+}
+]
